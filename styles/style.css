@@ -3,6 +3,9 @@
 .bg-menu {
     background-color: #085E7D !important;
 }
+.my-text-1 {
+    color: #085E7D !important;
+}
 
 .bg-menu #menu a {
     color: white !important;
@@ -14,4 +17,9 @@
 }
 .bg-menu #menu a.active {
     opacity: 1;
+}
+.card-img-top-my{
+height: 40vh;
+/* object-fit: cover;
+object-position: top left; */
 }
