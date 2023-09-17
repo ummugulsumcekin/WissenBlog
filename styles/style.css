@@ -23,3 +23,24 @@ height: 40vh;
 /* object-fit: cover;
 object-position: top left; */
 }
+
+body {
+    background-color: white;
+}
+
+/* Yazı rengi */
+p, a {
+    color: #085E7D;
+}
+
+/* Buton rengi */
+.btn-blog {
+    background-color: #085E7D;
+    color: white;
+}
+
+/* Navbar arka plan rengi */
+.bg-menu {
+    background-color: #085E7D;
+    color: white;
+}
