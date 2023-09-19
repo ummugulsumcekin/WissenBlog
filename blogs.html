@@ -7,124 +7,168 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
     <title>Wissen Blog</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
 </head>
+<div class="container-fluid p-0">
+  <div class="navbar navbar-expand-lg bg-menu fixed-top">
+    <div class="container">
+      <a href="/" class="navbar-brand">
+        <i class="fa-solid fa-house text-white"></i>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body>
-    <div class="container-fluid p-0">
-        <div class="navbar navbar-expand-lg bg-menu fixed-top">
-            <div class="container">
-                <a href="/" class="navbar-brand">
-                    <i class="fa-solid fa-house text-white"></i>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="blogs.html">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-                        <button class="btn btn-warning" type="submit">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="bg-menu py-3 text-white">
-            <div class="container text-center">
-                <span>
-                    <i class="fa-regular fa-copyright"></i> 2023 Ümmügülsüm Çekin Tarafından Hazırlanmıştır.
-                </span>
-            </div>
-            
-          </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+          <button class="btn btn-warning" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
     </div>
-    <!--! blogs section start  -->
-    <section class="blogs" id="blogs">
-        <h1 class="heading"><span>Our Blog</span></h1>
-        <div class="box-container">
-          <div class="box">
-            <div class="image">
-              <img src="images/" alt="blog" />
-            </div>
-            <div class="content">
-              <a href="#" class="title">What Is Full-Stack Development and Why Is It Important?</a>
-              <span>by admin / 10st may, 2020</span>
-              <p>
-                Full-stack development is a skill that encompasses both front-end and back-end web development. In this blog post, we'll explain what full-stack development is, why it's important, and how you can benefit from Wissen Academy's education programs in this field. Full-stack development can provide a competitive advantage for those looking to excel in the world of technology.
-                
-              </p>
-              <a href="blogs.html" class="btn-blog">read more</a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="image">
-              <img src="images/blog-2.jpg" alt="blog" />
-            </div>
-            <div class="content">
-              <a href="#" class="title">Key Technologies to Learn for Web Development</a>
-              <span>by admin / 11th June, 2021</span>
-              <p>
-                The world of web development is constantly evolving, and it's important to learn the latest technologies. In this blog post, we'll discuss which technologies you should focus on when starting to learn web development. We'll also share how you can master these technologies through Wissen Academy's education programs.
+  </div>
+<section class="home" id="home">
+  <div class="home-text container">
+     
+      <img src="images/banner2.png" alt="">
+      <h2 class="home-title">Wissen Blog</h2>
+      <span class="home-subtitle">Your source of great content</span>
+  </div>
+</section>
 
- </p>
-              <a href="blogs.html" class="btn-blog">read more</a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="image">
-              <img src="images/blog-3.jpg" alt="blog" />
-            </div>
-            <div class="content">
-              <a href="#" class="title">Advancing Your Career with Wissen Academy</a>
-              <span>by admin / 10st July, 2022</span>
-              <p>
-                Wissen Academy can help you specialize in full-stack development and other technology areas. In this blog post, we'll explore how Wissen Academy's education programs can advance your career. We'll discuss the advantages they offer to students and share success stories of graduates. We'll explain why choosing Wissen Academy is essential for enhancing your career and standing out in the world of technology.
-These blog posts can provide informative and engaging content for the target audience of Wissen Academy. For those considering enrolling in the academy's education programs, these blog posts can guide them in their decision-making process.
-              </p>
-              <a href="#" class="btn-blog">read more</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--! blogs section end  -->
+<section class="about container" id="about">
+  <div class="contentBx">
+      <h2 class="titleText">Catch up with the trending topics</h2>
+      <p class="title-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos consequuntur voluptate dolorum totam provident ducimus cupiditate dolore doloribus repellat. Saepe ad fugit similique quis quam. Odio suscipit incidunt distinctio.
+          <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis libero pariatur ipsum suscipit voluptates aut, repellendus quos dolor autem, natus laboriosam consectetur maxime cumque, sunt magni optio? Veritatis, ea?
+      </p>
+      <a href="#" class="btn2">Read more</a>
+  </div>
+  <div class="imgBx">
+      <img src="images/about.png" alt="" class="fitBg">
+  </div>
+</section>
+
+<div class="post-filter container">
+  <span class="filter-item active-filter" data-filter="all">All</span>
+  <span class="filter-item" data-filter="tech">Tech</span>
+
+  <span class="filter-item" data-filter="news">News</span>
+</div>
+
+<div class="post container">
+  <!-- Post 1 -->
+  <div class="post-box tech">
+      <img src="images/img1.jpg" alt="" class="post-img">
+      <h2 class="category">Tech</h2>
+      <a href="#" class="post-title">How to became a FullStack Developer</a>
+      <span class="post-date">12 Feb 2022</span>
+      <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+      <div class="profile">
+          <img src="images/testi3.jpg" alt="" class="profile-img">
+          <span class="profile-name">MKHB</span>
+      </div>
+  </div>
+  <!-- Post 2 -->
   
-      <!--! footer section start  -->
-      <section class="footer">
-        <div class="search">
-          <input type="text" class="search-input" placeholder="Search" />
-          <button class="btn btn-primary">search</button>
-        </div>
-      
   
-      <div class="credit">
-          created by <span>Ümmügülsüm Çekin</span> | all rigths reserved
-        </div>
-      </section>
-      <!--! footer section end  -->
   
-      <script src="js/script.js"></script>
-    </body>
-  </html>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts/app.js"></script>
+  <div class="post-box news">
+      <img src="images/img4.jpg" alt="" class="post-img">
+      <h2 class="category">Tech</h2>
+      <a href="#" class="post-title">How to became a FullStack Developer</a>
+      <span class="post-date">12 Feb 2022</span>
+      <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+      <div class="profile">
+          <img src="images/testi1.jpg" alt="" class="profile-img">
+          <span class="profile-name">MKHB</span>
+      </div>
+  </div>
+  <!-- Post 3 -->
+  <div class="post-box tech">
+      <img src="images/img5.jpg" alt="" class="post-img">
+      <h2 class="category">Tech</h2>
+      <a href="#" class="post-title">How to became a FullStack Developer</a>
+      <span class="post-date">12 Feb 2022</span>
+      <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+      <div class="profile">
+          <img src="images/testi3.jpg" alt="" class="profile-img">
+          <span class="profile-name">MKHB</span>
+      </div>
+  </div>
+  <!-- Post 4 -->
+  <div class="post-box news">
+      <img src="images/img4.jpg" alt="" class="post-img">
+      <h2 class="category">News</h2>
+      <a href="#" class="post-title">How to became a FullStack Developer</a>
+      <span class="post-date">12 Feb 2022</span>
+      <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+      <div class="profile">
+          <img src="images/testi2.jpg" alt="" class="profile-img">
+          <span class="profile-name">MKHB</span>
+      </div>
+  </div>
+  <!-- Post 5 -->
+  <div class="post-box tech">
+      <img src="images/img7.jpg" alt="" class="post-img">
+      <h2 class="category">Tech</h2>
+      <a href="#" class="post-title">How to became a FullStack Developer</a>
+      <span class="post-date">12 Feb 2022</span>
+      <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+      <div class="profile">
+          <img src="images/testi1.jpg" alt="" class="profile-img">
+          <span class="profile-name">MKHB</span>
+      </div>
+  </div>
+  <!-- Post 6 -->
+  <div class="post-box news">
+      <img src="images/img8.jpg" alt="" class="post-img">
+      <h2 class="category">News</h2>
+      <a href="#" class="post-title">How to became a FullStack Developer</a>
+      <span class="post-date">12 Feb 2022</span>
+      <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+      <div class="profile">
+          <img src="images/testi2.jpg" alt="" class="profile-img">
+          <span class="profile-name">MKHB</span>
+      </div>
+  </div>
+ 
+ 
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
 </body>
-
 </html>
