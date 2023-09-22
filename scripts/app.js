@@ -1,26 +1,9 @@
-// nav background
-let header = document.querySelector("header");
+const blogCards = document.querySelectorAll(".blog-card");
 
-window.addEventListener("scroll", () => {
-    header.classList.toggle("shadow", window.scrollY > 0)
-})
-
-// //Filter
-// $(document).ready(function () {
-//     $(".filter-item").click(function () {
-//         const value = $(this).attr("data-filter");
-//         if (value == "all"){
-//             $(".post-box").show("1000")
-//         } else{
-//             $(".post-box")
-//                 .not("." + value)
-//                 .hide(1000);
-//             $(".post-box")
-//             .filter("." + value)
-//             .show("1000")
-//         }
-//     });
-//     $(".filter-item").click(function () {
-//         $(this).addClass("active-filter").siblings().removeClass("active-filter")
-//     });
-// });
+blogCards.forEach((card) => {
+    card.addEventListener("click", () => {
+        // Örnek olarak her blog kartı farklı bir detay sayfasına yönlendiriyor.
+        // Gerçek bağlantıları kendi projenize uygun şekilde güncelleyin.
+        window.location.href = "blog1.html"; // Örneğin, tıklanan blogun bağlantısı
+    });
+});
