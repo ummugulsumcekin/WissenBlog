@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
 
+.my-text1{
+    color: #085E7D !important;
+}
+
 .bg-menu {
     background-color: #085E7D !important;
-}
-.my-text-1 {
-    color: #085E7D !important;
 }
 
 .bg-menu #menu a {
@@ -18,8 +19,48 @@
 .bg-menu #menu a.active {
     opacity: 1;
 }
+
 .card-img-top-my{
-height: 40vh;
-/* object-fit: cover;
-object-position: top left; */
+    height: 40vh;
+    /* object-fit: cover; */
+    /* object-position: top left; */
+}
+
+.blogs {
+    padding: 3rem 0;
+}
+
+.blog-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.blog-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.blog-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
 }
