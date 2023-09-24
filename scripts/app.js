@@ -1,21 +1,16 @@
-<<<<<<< HEAD
-const blogCards = document.querySelectorAll(".blog-card");
-
-blogCards.forEach((card) => {
-    card.addEventListener("click", () => {
-        // Örnek olarak her blog kartı farklı bir detay sayfasına yönlendiriyor.
-        // Gerçek bağlantıları kendi projenize uygun şekilde güncelleyin.
-        window.location.href = "blog1.html"; // Örneğin, tıklanan blogun bağlantısı
+$(document).ready(function () {
+    $(".filter-button").click(function () {
+        var value = $(this).attr('data-filter');
+        if (value == "all") {
+            $('.blog-card').show('1000');
+        } else {
+            $(".blog-card").not('.' + value).hide('3000');
+            $('.blog-card').filter('.' + value).show('3000');
+        }
     });
-});
-=======
-const blogCards = document.querySelectorAll(".blog-card");
 
-blogCards.forEach((card) => {
-    card.addEventListener("click", () => {
-        // Örnek olarak her blog kartı farklı bir detay sayfasına yönlendiriyor.
-        // Gerçek bağlantıları kendi projenize uygun şekilde güncelleyin.
-        window.location.href = "blog1.html"; // Örneğin, tıklanan blogun bağlantısı
-    });
+    if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+    }
+    $(this).addClass("active");
 });
->>>>>>> a2a810aae413cb9ebf11fbecc3d8ff929b6b7e82
