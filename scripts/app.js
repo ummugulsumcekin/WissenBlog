@@ -1,16 +1,24 @@
 $(document).ready(function () {
+    // Varsayılan olarak "All" filtresini seç
+    $(".filter-button[data-filter='all']").addClass("active");
+
     $(".filter-button").click(function () {
         var value = $(this).attr('data-filter');
         if (value == "all") {
             $('.blog-card').show('1000');
         } else {
-            $(".blog-card").not('.' + value).hide('3000');
-            $('.blog-card').filter('.' + value).show('3000');
+            $('.blog-card').hide();
+            $('.blog-card[data-filter="' + value + '"]').show('3000');
+        }
+        // Aktif düğmeyi işaretleme
+        $(".filter-button").removeClass("active");
+        $(this).addClass("active");
+
+        // Ekrana kaydır
+        if (value == "kurslar") {
+            $('html, body').animate({
+                scrollTop: $(".filter-buttons").offset().top - 50
+            }, 1000);
         }
     });
-
-    if ($(".filter-button").removeClass("active")) {
-        $(this).removeClass("active");
-    }
-    $(this).addClass("active");
 });
