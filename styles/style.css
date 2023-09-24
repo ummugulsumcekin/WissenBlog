@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
 
-.my-text1{
-    color: #085E7D !important;
-}
-
+/* Navbar stilleri */
 .bg-menu {
     background-color: #085E7D !important;
 }
@@ -13,21 +10,20 @@
     opacity: .7;
 }
 
-.bg-menu #menu a:hover{
+.bg-menu #menu a:hover {
     opacity: .9;
 }
+
 .bg-menu #menu a.active {
     opacity: 1;
 }
 
-.card-img-top-my{
-    height: 40vh;
-    /* object-fit: cover; */
-    /* object-position: top left; */
-}
-
+/* Blog kartları */
 .blogs {
     padding: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .blog-card {
@@ -35,7 +31,14 @@
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
+    height: 100%;
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .blog-card img {
     max-width: 100%;
@@ -48,9 +51,11 @@
     margin-bottom: 10px;
 }
 
+
 .blog-card p {
-    font-size: 16px; /* Özelleştirmek için uygun bir boyut belirleyin */
+    font-size: 16px;
     margin-bottom: 20px;
+    flex-grow: 1;
 }
 
 .blog-card a {
@@ -68,4 +73,22 @@
     text-decoration: underline;
 }
 
+/* Filtreleme düğmeleri */
+.filter-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.filter-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.filter-button.active {
+    background-color: #085E7D;
+}
