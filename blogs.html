@@ -47,29 +47,30 @@
         <section class="blog-introduction">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
+                    <div class="col-md-6 col-sm-12 d-flex align-items-center">
                         <div>
                             <h1>Wissen Blog</h1>
                             <p>Discover the most interesting topics, the latest news and the latest technologies. Welcome to blog posts that will inform and entertain you.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-6 col-sm-12 text-center">
                         <img src="images/img1.1.jpg" alt="Blog Introduction Image" style="max-width: 100%; height: auto; display: inline-block;">
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="filter-buttons">
-                    <button class="filter-button" data-filter="all">All</button>
+                    <button class="filter-button active" data-filter="all">All</button>
                     <button class="filter-button" data-filter="teknoloji">Tech</button>
                     <button class="filter-button" data-filter="kurslar">Courses</button>
                 </div>
+            </div>
         </section>
         <section class="blogs">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="blog-card">
+                        <div class="blog-card" data-filter="teknoloji">
                             <img src="images/img3.jpg" alt="Blog 1 Image">
                             <h2>WissenTech</h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis recusandae minima eos explicabo, provident architecto alias ipsum aperiam a dolore. Magnam culpa praesentium accusamus tempore non temporibus ipsam neque error, libero in. Tempore, inventore! Aspernatur cumque aliquam error iste deserunt dolorem est ad dicta odit! Sint, consequuntur. Quam, magnam dignissimos? Ab accusamus ratione iusto. Ratione, praesentium? Deserunt exercitationem facere quidem quod pariatur, dignissimos illum veniam praesentium, consequatur accusantium debitis, molestiae ipsa odit ea expedita voluptatum excepturi soluta labore quo! Natus doloremque quasi repudiandae consequuntur facilis aliquid praesentium cumque eius eligendi animi quae quo, omnis beatae vel adipisci hic dolorem alias!</p>
@@ -77,8 +78,8 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="blog-card">
-                            <img src="images/img5.jpg" alt="Blog 2 Image">
+                        <div class="blog-card" data-filter="teknoloji">
+                            <img src="images/img5.jpg" alt="Blog 2 Image" >
                             <h2>How I Can Start Sofware?</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia necessitatibus illum corrupti iste! Placeat a delectus saepe, fuga ipsam nobis quod magnam recusandae omnis ea nulla, porro debitis esse aliquid sit exercitationem qui reiciendis eos possimus voluptate sint corrupti. Illum tempora aliquid in, reiciendis corrupti officia laborum quisquam aperiam fuga illo quo minus delectus. Deleniti unde ad magni laboriosam eum saepe, porro, esse dolores maxime quibusdam, quia neque architecto asperiores odio explicabo quod exercitationem mollitia at aliquam voluptates recusandae ex illo? Accusantium quae dolorum autem suscipit soluta, quisquam et quaerat repudiandae cumque, voluptatum pariatur perspiciatis consequatur nostrum nesciunt molestias!
                             </p>
@@ -86,7 +87,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="blog-card">
+                        <div class="blog-card" data-filter="kurslar">
                             <img src="images/img9.jpg" alt="Blog 3 Image">
                             <h2>Our Courses</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, dolores! Nesciunt aut neque eveniet, sapiente nemo voluptatem, delectus ut in doloremque consequuntur soluta! Accusamus dolor cupiditate minus ipsum natus vel aliquam suscipit at soluta? Harum, voluptate cupiditate perferendis velit totam ducimus nam dolore, enim suscipit illo natus eligendi minus. Id, accusamus ipsam? Sequi ducimus dolores illum delectus odit provident doloremque sed, odio rerum quod blanditiis ratione distinctio nam hic error itaque nemo illo modi. Perferendis molestias cumque cum distinctio dicta iure odit dolor eligendi aliquid autem quasi impedit nemo nesciunt, quod ab, temporibus repudiandae? Laudantium, totam! Adipisci consequatur deleniti expedita?</p>
@@ -99,12 +100,16 @@
 
 
         <!--FOOTER-->
-        <div class="bg-menu py-3 text-white fixed-bottom">
+        <div class="bg-menu py-3 text-white">
             <div class="container text-center">
-                <span>BAU Bright 2303-07 Grubu Tarafından Hazırlanmıştır. &copy; 2023</span>
+              
+              <span>
+                <i class="fa-regular fa-copyright"></i> 2023 Ümmügülsüm Çekin
+                Tarafından Hazırlanmıştır.
+              </span>
+    
             </div>
         </div>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/app.js"></script>
